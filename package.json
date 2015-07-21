@@ -1,0 +1,22 @@
+{
+  "name": "node-relay-server",
+  "version": "1.0.0",
+  "description": "An express server for communicating with an arduino relay using Johnny-Five.",
+  "main": "relay.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/sethetter/node-relay-server.git"
+  },
+  "keywords": [
+    "example"
+  ],
+  "author": "Seth Etter <sethetter@gmail.com> (http://sethetter.com)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.1",
+    "johnny-five": "^0.8.85"
+  }
+}

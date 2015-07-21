@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8' />
+  <title>THINGS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <style>button { font-size: 90px; }</style>
+</head>
+<body>
+  <button class="on">ON</button>
+  <button class="off">OFF</button>
+  <button class="toggle">toggle</button>
+
+  <script type="text/javascript">
+    document.querySelector('.on').addEventListener('click', function(e) {
+      var xhr = new XMLHttpRequest();
+      xhr.open('get', '/on', true);
+      xhr.send();
+    });
+    document.querySelector('.off').addEventListener('click', function(e) {
+      var xhr = new XMLHttpRequest();
+      xhr.open('get', '/off', true);
+      xhr.send();
+    });
+    document.querySelector('.toggle').addEventListener('click', function(e) {
+      var xhr = new XMLHttpRequest();
+      xhr.open('get', '/toggle', true);
+      xhr.send();
+    });
+  </script>
+</body>
+</html>
